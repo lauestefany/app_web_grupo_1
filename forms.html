@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulario html</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form accept="#" method="post">
+            <div>
+                <label>Primer Nombre:</label>
+                <input type="text" name="Primer nombre" maxlength="10"
+                placeholder="Ingrese su primer nombre"
+                value="Juan"
+                required
+                />
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" name="pwd"/>
+                
+            </div>
+            <div>
+                <label>Edad</label>
+                <input type="number" name="Edad" min="1" max="120"/>   
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="example@gmail.com"/>   
+            </div>
+            <div>
+                <label>Archivo</label>
+                <input type="file" name="Archivo"/>   
+            </div>
+            <div>
+                <label>Color</label>
+                <input type="color" name="color"/>            
+            </div>
+            <div>
+                <label>fecha</label>
+                <input type="date" name="fecha"/>    
+            </div>
+            <div>
+                <label>Fecha hora</label>
+                <input type="datetime-local" name="fechaHora"/> 
+            </div>
+            <div>
+                <label>Ciudad</label>
+                <select name="Ciudad">
+                    <option value="">Seleccione ciudad</option>
+                    <option value="1">Tunja</option>
+                    <option value="2">Duitama</option>
+                    <option value="3">Sogamoso</option>
+                </select>       
+            </div>
+            <div>
+                <label>Estado civil</label>
+                <label>
+                    <input type="radio" name="estado civil"value="a">
+                    Soltero
+                </label>
+                <label>
+                    <input type="radio" name="estado civil"value="b">
+                    Casado/a
+                </label>
+                <label>
+                    <input type="radio" name="estado civil"value="c"checked>
+                    Ninguno
+                </label>
+            </div>
+            <br>
+            <div>               
+                <label>Pasatiempo:</label>
+                    <input type="checkbox" name="deporte">
+                    deporte
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Videojuegps">
+                    Videojuegos   
+                </label>
+                <label>
+                    <input type="checkbox" name="Lectura"checked>
+                    Lectura
+                </label>
+            </div>
+            <div>
+                <label>Justifique"</label>
+                <textarea name="Justifique" rows="10" cols="35">aaaaaa</textarea>
+            </div>
+            <div>
+                <input type="button" value="button">
+                <button disabled>Botón</button>
+            </div>
+            <div>
+                <input type="reset" value="Limpiar">
+                <button type="reset">Limpiar</button>
+            </div>
+            <div>
+                <input type="submit" value="enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>
