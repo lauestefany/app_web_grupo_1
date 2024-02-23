@@ -1,0 +1,12 @@
+header{
+    width: 100vw;
+    height: 400px;
+    background: #ff008f;
+    /*background:url('https://cc-prod.scene7.com/is/image/CCProdAuthor/7%20AdobeStock_335413355?$png$&jpegSize=200&wid=960');*/
+    background-color: #ff008f;
+    background-image: url('../Nueva\ carpeta/Stitch-HD.png'), url('https://cc-prod.scene7.com/is/image/CCProdAuthor/7%20AdobeStock_335413355?$png$&jpegSize=200&wid=960');
+    
+    background-size: 100px, cover;
+    background-repeat:  no-repeat;
+    background-position: 50px 100px,0px 0px;
+}
