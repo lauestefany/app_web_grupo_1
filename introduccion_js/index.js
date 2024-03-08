@@ -77,3 +77,77 @@ if(m === 12){
 && anfd
 || or
 */
+let categoria = 'a';
+switch (categoria){
+    case 'a':
+        console.log('categoria A');
+        break;
+    case 'B':
+        console.log('categoria B');
+        break;
+     case 'C':
+        console.log('categoria C');
+        break;
+    default:
+        console.log('SIN DEFINIR ');
+        break;
+
+}
+function sumar (a,b){
+    return a + b;
+}
+function esMayorEdad(edad){
+    if(edad<18){
+        return 'Es mayor de edad';
+    }else{
+        return 'Es mayor de edad';
+    }
+}
+
+let resultado = sumar(2, 5);
+function realizarSuma(a, b){
+    console.log(a + b);
+}
+realizarSuma(2, 'dos');
+const sumar2 =  (a, b) => {
+    return a + b;
+}
+console.log(sumar2(5,9));
+
+class Esttudiante{
+    nombre;
+    edad;
+    email;
+    codigo;
+
+    constructor(nombre,edad,email,codigo){
+        this.nombre=nombre;
+        this.edad= edad;
+        this.email = email;
+        this.codigo= codigo;
+
+
+    }
+    esMayorEdad(){
+       // if (this.edad<18){
+         //   return'Es menor de edad';
+
+       // }else{
+            //return 'Es mayor de edad';
+        //}
+        return this.edad < 18
+        ? ' es menor de edad'
+        : 'Es meayor de edad';
+    }
+}
+const estudiante = new Estudiante('Pepe',17,'tests@test.com', '1234');
+console.log(estudiante.nombre,estudiante.esMayorEdad());
+
+class EstudianteSistemas extends Estudiante {
+    constructor(codigo) {
+        super('Ana',28,'tests@test.com', codigo);
+    }
+}
+const sistemas = new EstudianteSistemas('654321');
+console.log(sistemas.nombre,sistemas.esMayorEdad(),sistemas.codigo);
+
