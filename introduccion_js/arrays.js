@@ -28,6 +28,9 @@ const trasnPares = numerspares.map((value, index) =>{
     return 'El numero par'+ index + 'es:'+ value;
 });
 console.log(trasnPares); 
+function mostrarMsg() {
+    document.getElementById('tituloH1').innerText= 'Hola mundo';
+}
 
 
 
