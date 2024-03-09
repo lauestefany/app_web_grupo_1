@@ -8,7 +8,7 @@ const lista= numeros.concat([13,14,15]);
 console.log(numeros);
 lista.splice(0,5);
 console.log(lista);
-console.shift();
+lista.shift();
 console.log(lista);
 
 
